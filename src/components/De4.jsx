@@ -5,6 +5,7 @@ import { useState } from "react";
 import { questions_4 } from "@/libs/lop2/ki2/data_de4";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const scoreColor = (score) => {
   if (score === 10) {
@@ -21,6 +22,9 @@ const scoreColor = (score) => {
 };
 
 const De4 = () => {
+  const pathName = usePathname();
+  const ten_de = pathName.slice(3);
+
   const [score, setScore] = useState("");
 
   const updateScore = (newsScore) => {
@@ -99,6 +103,9 @@ const De4 = () => {
             {score === 10 ? "🎉" : ""}
           </div>
         </div>
+      </div>
+      <div className="text-lg sm:text-xl md:text-2xl font-bold underline text-teal-500 mb-4 rounded-md">
+        Đề số {ten_de}
       </div>
       <form action={getResult} className="flex flex-col gap-6 max-w-3xl pb-8">
         {questions_4.map((q) => {
