@@ -9,7 +9,7 @@ const num_1_2 = getRandomInt(10, 60);
 
 const num_2_1 = getRandomInt(10, 20);
 
-const num_4_1 = getRandomInt(2, 9);
+const num_4_1 = getRandomInt(2, 8);
 
 const num_5_1 = getRandomInt(1, 9);
 const num_5_2 = getRandomInt(1, 9);
@@ -40,7 +40,7 @@ export const questions_4 = [
   },
   {
     id: 4,
-    noi_dung: `Giá trị của chữ số ${num_4_1} trong 1${num_4_1}7 là:`,
+    noi_dung: `Giá trị của chữ số ${num_4_1} trong 1${num_4_1}9 là:`,
     dap_an_dung: `${num_4_1}0`,
   },
   {
