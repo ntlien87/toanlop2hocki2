@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { questions_1 } from "@/libs/lop2/ki2/data";
+import { questions_1 } from "@/libs/lop2/ki2/data_de1";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -118,40 +118,14 @@ const De1 = () => {
                   />
                 </div>
               )}
-
-              <div className="flex flex-wrap gap-x-8 ml-6 font-medium sm:text-lg">
-                <label className="flex gap-1 items-center gap-y-1">
-                  <input
-                    type="radio"
-                    name={`ans_${q.id}`}
-                    value={q.cac_dap_an[0]}
-                  />
-                  <span>{q.cac_dap_an[0]}</span>
-                </label>
-                <label className="flex gap-1 items-center gap-y-1">
-                  <input
-                    type="radio"
-                    name={`ans_${q.id}`}
-                    value={q.cac_dap_an[1]}
-                  />
-                  <span>{q.cac_dap_an[1]}</span>
-                </label>
-                <label className="flex gap-1 items-center gap-y-1">
-                  <input
-                    type="radio"
-                    name={`ans_${q.id}`}
-                    value={q.cac_dap_an[2]}
-                  />
-                  <span>{q.cac_dap_an[2]}</span>
-                </label>
-                <label className="flex gap-1 items-center gap-y-1">
-                  <input
-                    type="radio"
-                    name={`ans_${q.id}`}
-                    value={q.cac_dap_an[3]}
-                  />
-                  <span>{q.cac_dap_an[3]}</span>
-                </label>
+              <div className="ml-8">
+                <input
+                  type="text"
+                  name={`ans_${q.id}`}
+                  required
+                  placeholder="Đáp án..."
+                  className="px-4 py-2 outline-emerald-600 rounded-md w-[150px]"
+                />
               </div>
             </div>
           );

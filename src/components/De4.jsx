@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { questions_4 } from "@/libs/lop2/ki2/data";
+import { questions_4 } from "@/libs/lop2/ki2/data_de4";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -118,8 +118,16 @@ const De4 = () => {
                   />
                 </div>
               )}
-
-              <div className="flex flex-wrap gap-x-8 ml-6 font-medium sm:text-lg">
+              <div className="ml-8">
+                <input
+                  type="text"
+                  name={`ans_${q.id}`}
+                  required
+                  placeholder="Đáp án..."
+                  className="px-4 py-2 outline-emerald-600 rounded-md w-[150px]"
+                />
+              </div>
+              {/* <div className="flex flex-wrap gap-x-8 ml-6 font-medium sm:text-lg">
                 <label className="flex gap-1 items-center gap-y-1">
                   <input
                     type="radio"
@@ -152,7 +160,7 @@ const De4 = () => {
                   />
                   <span>{q.cac_dap_an[3]}</span>
                 </label>
-              </div>
+              </div> */}
             </div>
           );
         })}

@@ -1,109 +1,85 @@
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+const num2_2_1 = getRandomInt(723, 999);
+const num2_2_2 = getRandomInt(222, 444);
+
 export const questions_1 = [
   {
     id: 1,
     noi_dung: "Số gồm 6 trăm, 7 chục và 8 đơn vị là:",
-    cac_dap_an: ["687", "768", "876", "678"],
     dap_an_dung: "678",
   },
   {
     id: 2,
-    noi_dung: "Số 507 được đọc là:",
-    cac_dap_an: [
-      "Năm trăm linh bảy",
-      "Năm không bảy",
-      "Năm mươi bảy",
-      "Năm trăm không bảy",
-    ],
-    dap_an_dung: "Năm trăm linh bảy",
+    noi_dung: "Số chín trăm linh năm được viết là?",
+    dap_an_dung: "905",
   },
   {
     id: 3,
-    noi_dung: "Trong phép chia 15 : 5 = 3, số 3 được gọi là:",
-    cac_dap_an: ["Thương", "Tổng", "Tích", "Số hạng"],
-    dap_an_dung: "Thương",
+    noi_dung: "Tìm x, biết 36 : x = 6:",
+    dap_an_dung: "6",
   },
   {
     id: 4,
     noi_dung: "Số bé nhất trong các số 834, 148, 593, 328 là:",
-    cac_dap_an: ["593", "834", "148", "328"],
     dap_an_dung: "148",
   },
   {
     id: 5,
-    noi_dung: "Đáp án nào dưới đây là đúng?",
-    cac_dap_an: [
-      "17 giờ tức là 7 giờ chiều",
-      "15 giờ tức là 5 giờ chiều",
-      "19 giờ tức là 9 giờ tối",
-      "20 giờ tức là 8 giờ tối",
-    ],
-    dap_an_dung: "20 giờ tức là 8 giờ tối",
+    noi_dung: "7 giờ tối là 19 giờ. Vậy 9 giờ tối là mấy giờ?",
+    dap_an_dung: "21",
   },
   {
     id: 6,
-    noi_dung: "Tính 15kg + 23kg + 16kg = …..kg Số cần điền vào chỗ chấm là:",
-    cac_dap_an: ["34kg", "44kg", "54kg", "43kg"],
-    dap_an_dung: "54kg",
+    noi_dung:
+      "Tính thương của số tròn chục lớn nhất có 2 chữ số và số liền trước của số chẵn nhỏ nhất có 2 chữ số?",
+    dap_an_dung: "10",
   },
   {
     id: 7,
-    hinh_anh: "/khoicau.jpg",
-    noi_dung: "Quả bóng ở tranh bên dưới có hình:",
-    cac_dap_an: [
-      "Khối trụ",
-      "Khối cầu",
-      "Khối lập phương",
-      "Khối hộp chữ nhật",
-    ],
-    dap_an_dung: "Khối cầu",
+    noi_dung: "Tính: 99 - 9 x 9 + 9",
+    dap_an_dung: "27",
   },
   {
     id: 8,
-    noi_dung: "Kết quả phép tính '5 + 5 x 5' là: ",
-    cac_dap_an: ["30", "50", "20", "15"],
-    dap_an_dung: "30",
+    noi_dung: "1m + 5dm = ...cm. Số cần điền vào chỗ chấm là?",
+    dap_an_dung: "150",
   },
   {
     id: 9,
     noi_dung:
       "Một cửa hàng tuần trước bán được 281 kg gạo, tuần sau bán nhiều hơn tuần trước gấp 3 lần . Hỏi tuần sau cửa hàng bán được bao nhiêu ki-lô-gam gạo? ",
-    cac_dap_an: ["284kg", "643kg", "743kg", "843kg"],
-    dap_an_dung: "843kg",
+    dap_an_dung: "843",
   },
   {
     id: 10,
     hinh_anh: "/questions_1_10.jpg",
     noi_dung:
-      "Quan sát hình ảnh và ghi số ki – lô- gam tương ứng cho mỗi vật trên chiếc cân theo thứ tự từ trái sang phải?  ",
-    cac_dap_an: [
-      "2kg - 8kg - 4kg - 7kg",
-      "4kg - 11kg - 8kg - 7kg",
-      "2kg - 11kg - 4kg - 7kg",
-      "2kg - 11kg - 8kg - 7kg",
-    ],
-    dap_an_dung: "2kg - 11kg - 8kg - 7kg",
+      "Quan sát hình ảnh, tính tổng khối lượng 4 chiếc cân bằng bao nhiêu ki-lô-gam ?  ",
+    dap_an_dung: "30",
   },
 ];
 
 export const questions_2 = [
   {
     id: 1,
-    noi_dung: "Số liền trước của số lớn nhất có ba chữ số là:",
-    cac_dap_an: ["998", "111", "999", "1000"],
-    dap_an_dung: "998",
+    noi_dung: "Số lẻ liền trước của số lớn nhất có ba chữ số là:",
+    dap_an_dung: "997",
   },
   {
     id: 2,
-    noi_dung: "Hiệu của 783 và 245 là:",
-    cac_dap_an: ["548", "538", "528", "518"],
-    dap_an_dung: "538",
+    noi_dung: `Hiệu của ${num2_2_1} và ${num2_2_2} là:`,
+    dap_an_dung: `${num2_2_1 - num2_2_2}`,
   },
   {
     id: 3,
     hinh_anh: "/questions2_3.webp",
-    noi_dung: "Độ dài của đường gấp khúc MNPQ là:",
-    cac_dap_an: ["9cm", "10cm", "6cm", "8cm"],
-    dap_an_dung: "9cm",
+    noi_dung: "Độ dài của đường gấp khúc MNPQ bằng bao nhiêu cen-ti-mét:",
+    dap_an_dung: "9",
   },
   {
     id: 4,
