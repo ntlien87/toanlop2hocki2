@@ -49,34 +49,34 @@ const De6 = () => {
       ans_10,
     } = Object.fromEntries(formData);
 
-    if (ans_1 === questions_6[0].dap_an_dung) {
+    if (ans_1.trim() === questions_6[0].dap_an_dung) {
       score += 1;
     }
-    if (ans_2 === questions_6[1].dap_an_dung) {
+    if (ans_2.trim() === questions_6[1].dap_an_dung) {
       score += 1;
     }
-    if (ans_3 === questions_6[2].dap_an_dung) {
+    if (ans_3.trim() === questions_6[2].dap_an_dung) {
       score += 1;
     }
-    if (ans_4 === questions_6[3].dap_an_dung) {
+    if (ans_4.trim() === questions_6[3].dap_an_dung) {
       score += 1;
     }
-    if (ans_5 === questions_6[4].dap_an_dung) {
+    if (ans_5.trim() === questions_6[4].dap_an_dung) {
       score += 1;
     }
-    if (ans_6 === questions_6[5].dap_an_dung) {
+    if (ans_6.trim() === questions_6[5].dap_an_dung) {
       score += 1;
     }
-    if (ans_7 === questions_6[6].dap_an_dung) {
+    if (ans_7.trim() === questions_6[6].dap_an_dung) {
       score += 1;
     }
-    if (ans_8 === questions_6[7].dap_an_dung) {
+    if (ans_8.trim() === questions_6[7].dap_an_dung) {
       score += 1;
     }
-    if (ans_9 === questions_6[8].dap_an_dung) {
+    if (ans_9.trim() === questions_6[8].dap_an_dung) {
       score += 1;
     }
-    if (ans_10 === questions_6[9].dap_an_dung) {
+    if (ans_10.trim() === questions_6[9].dap_an_dung) {
       score += 1;
     }
 
