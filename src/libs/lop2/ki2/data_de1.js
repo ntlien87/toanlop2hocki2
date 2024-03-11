@@ -81,6 +81,6 @@ export const questions_1 = [
     hinh_anh: "/questions_1_10.jpg",
     noi_dung:
       "Quan sát hình ảnh, tính tổng khối lượng 4 chiếc cân bằng bao nhiêu ki-lô-gam ?  ",
-    dap_an_dung: "30",
+    dap_an_dung: "28",
   },
 ];
