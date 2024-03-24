@@ -21,6 +21,8 @@ const num_4_4 = getRandomInt(3, 9);
 const num_6_arr = [40, 48, 56, 64, 72];
 const random_num_6 = num_6_arr[Math.floor(Math.random() * num_6_arr.length)];
 
+const num_7_1 = getRandomInt(20, 30)
+
 const num_10_1 = getRandomInt(6, 9);
 const num_10_2 = getRandomInt(5, 9);
 const num_10_3 = getRandomInt(2, 4);
@@ -65,8 +67,8 @@ export const questions_6 = [
   },
   {
     id: 7,
-    noi_dung: `Thứ năm tuần này là ngày 30. Vậy thứ 2 tuần trước là ngày bao nhiêu?`,
-    dap_an_dung: "19",
+    noi_dung: `Thứ năm tuần này là ngày ${num_7_1}. Vậy thứ 2 tuần trước là ngày bao nhiêu?`,
+    dap_an_dung: `${num_7_1 - 10}`,
   },
   {
     id: 8,
